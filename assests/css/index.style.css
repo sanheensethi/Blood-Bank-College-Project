@@ -92,3 +92,35 @@ h1.usersh1{
 	color:#000;
 	font-weight:bold;
 }
+input[type="checkbox"].check{
+	-webkit-appearance:none;
+	appearance:none;
+	outline:none;
+	width:70px;
+	height:40px;
+	background-color:#ccc;
+	border-radius:50px;
+	transition:.5s;
+}
+input[type="checkbox"].check::before{
+	content:"";
+	position:absolute;
+	left:10px;
+	width:40px;
+	height:40px;
+	background-color:#00f;
+	border-radius:50%;
+	transition:.5s;
+}
+input[type="checkbox"].check:checked::before{
+	left:50px;
+}
+input[type="checkbox"].check:checked{
+	background-color:#888ed5;
+}
+input[type="checkbox"]#chk1 ~ #text{
+	display:none;
+}
+input[type="checkbox"]#chk1:checked ~ #text{
+	display:block;
+}
