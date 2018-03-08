@@ -4,6 +4,7 @@
 	padding:20px;
 	width:100%;
 	border-radius:9px 30px 10px 40px;
+	z-index:1;
 }
 .explorecont h3{
 	text-align:center;
@@ -45,6 +46,15 @@ div.slogans{
 	background-color:#aa5757;
 	padding:20px;
 	border-radius:9px 20px 30px 50px;
+	animation: backgroundChange 10s infinite;
+}
+@keyframes backgroundChange{
+	0%{background-color:#d67373;box-shadow:3px 3px 10px #000;}
+	20%{background-color:#926262;}
+	40%{background-color:#3f3333; box-shadow:3px 3px 10px #000;}
+	60%{background-color:#8b458f;}
+	80%{background-color:7e7dbf; box-shadow:3px 3px 10px #000;}
+	100%{background-color:#d67373;}
 }
 div.slogans p{
 	position:absolute;

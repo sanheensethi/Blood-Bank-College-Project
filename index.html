@@ -19,9 +19,11 @@
 <link rel="stylesheet" href="assests/css/font-awesome.css">
 <link rel="stylesheet" href="assests/css/glyphicon.css">
 <link rel="stylesheet" href="assests/css/loader.css">
+<link rel="stylesheet" href="assests/css/notify.css">
 <!-- Main Files Ends -->
 <!--Index Page Files-->
 <link rel="stylesheet" href="assests/css/index.style.css">
+<link rel="stylesheet" href="assests/css/home.style.css">
 <!--Index Page Files Ends-->
 </head>
 <body>
@@ -30,46 +32,12 @@
 			<div class="lodcircle"></div>
 		</div>
 	<!--Loader Ends-->
+<div class="container">
+	<div class="header">
+		<center><h1><span class="fa fa-tint"></span> Blood Bank <span class="fa fa-tint"></span></h1></center>
+	</div>
+</div>
 <div id="allcon">
-	<!-- HEADER -->
-	<section id="header">
-		<header class="jumbotron"><br>
-			<div class="menubtn">
-				<h1><span class="fa fa-tint logo2"> <b>Blood Bank</b></span></h1>
-				<i class="fa fa-bars bars" id="navbar"></i>
-				<div class="clear"></div>
-			</div>
-			<div class="logo">
-				<h1><a href="index.html" class="animated infinite bounce" id="logo"><img style="float:left;width:150px;height:150px;" class="animated infinite bounce" src="icon/icon.png" /></a></h1>
-			</div>
-			<nav class="navigation">
-				<ul class="navcon" id="navul">
-					<li><a href="#header">Home</a></li>
-					<li><a href="#explore">Explore</a></li>
-					<li><a href="#explore">Register</a></li>
-					<li><a href="#contactus" >Contact US</a></li>
-					<li><a href="#aboutus" >About US</a></li>
-				</ul>
-			</nav>
-			<div class="clear"></div>
-			<div class="header-content">
-				<h1>Blood Bank</h1>
-				<hr>
-				<h2><em>Blood Donation will cost you nothing but it will save a life!</em></h2>
-			</div>
-			<div class="share">
-				<div class="sharebtn" id="sharebtn"><i class="fa fa-share"></i></div>
-				<ul class="share-content" id="shareul">
-					<li class="animate"><a href="#facebook"><i class="fa fa-facebook"></i></a></li>
-					<li class="animate"><a href="#twitter"><i class="fa fa-twitter"></i></a></li>
-					<li class="animate"><a href="#whatsapp">W</a></li>
-					<li class="animate"><a href="#instagram"><i class="fa fa-instagram"></i></a></li>
-					<li class="animate"><a href="#linkedin"><i class="fa fa-linkedin"></i></a></li>
-				</ul>
-			</div>
-		</header>
-	</section>
-	<!-- HEADER ENDS -->
 	<!--CONTENT-->
 	<section id="explore">
 		<div class="container-fluid">
@@ -77,7 +45,7 @@
 			<div class="row">
 				<div class="col col-12 col-md-12">
 					<div class="explorecont">
-						<h3><span class="fa fa-tint"></span> Find People Around You Here <span class="fa fa-tint"></span></h3>
+						<h3><span id="bg" class="fa fa-tint"></span> Find People Around You Here <span id="bg2" class="fa fa-tint"></span></h3>
 						<div class="line"></div><br>
 						<div class="blood-group">
 							<select class="form-control">
@@ -102,45 +70,18 @@
 					</div>
 				</div>
 				<div class="col col-12 col-md-12">
-					<div class="explorecont">
+					<div class="explorecont left">
 						<h3><span class="fa fa-group"></span> Register Here ! Help Others <span class="fa fa-group"></span></h3>
 						<div class="line"></div><br>
 						<p>Few minutes of blood donation process can be changed into lifetime to someone.</p>
 						<p>To the young and healthy it’s no loss. To sick it’s hope of life. Donate Blood to give back life.</p><br>
-						<input type="submit" name="register"  value="Register !!" id="register" class="btn btn-success regis">
+						<input type="submit" name="register"  value="Register !!" id="register" onclick="showregisform()" class="btn btn-success regis">
+						<br>
+						<input type="submit" name="login"  value="Login !!" id="login" onclick="showloginform()" class="btn btn-success regis">
 				</div>
 			</div>
 		</div>
 	</div>
-		<br><br>
-		<!--BlockQuotes-->
-		<div class="row">
-			<div class="col col-12 col-md-12">
-				<div class="slogans">
-					<blockquote>
-						<p id="quote"></p>
-					</blockquote>
-				</div>
-			</div>
-		</div>
-		<!--BlockQuotes Ends-->
-		<br><br>
-		<!--Our Users All Over India-->
-		<div class="row">
-			<div class="col col-12 col-md-12">
-				<center><h1 class="usersh1"><span class="fa fa-group"></span> Our Users All Over India : </h1></center>
-				<div class="circle" users="300">300k</div>
-			</div>
-		</div>
-		<!--Users Ends-->
-		<br><br>
-		<!--FeedBack Form-->
-			<div class="row">
-				<div class="col col-md-12 col-12">
-					
-				</div>
-			</div>
-		<!--FeedBack Form Ends-->
 	</section>
 	<!--CONTENT ENDS-->
 	<!-- FOOTER -->
@@ -173,6 +114,53 @@
 		</footer>
 	<!-- FOOTER ENDS -->
 </div>
+<!--Registration Form-->
+		<div class="regisform" id="regisform">
+			<form>
+				<label for="username" style="font-size:30px;">Name <span class="fa fa-user"></span> </label>
+				<input type="text" class="form-control" name="username" placeholder="Enter Your Name.." style="border-radius:9px;" id="username">
+				<label for="email" style="font-size:30px;">Email <span class="fa fa-envelope"></span> </label>
+				<input type="email" class="form-control" name="email" placeholder="Enter Your Email.." style="border-radius:9px;" id="email">
+				<label for="mobile" style="font-size:30px;">M. No. <span class="fa fa-phone"></span> </label>
+				<input type="number" class="form-control" name="mobile" placeholder="Enter Your Mobile Number.." style="border-radius:9px;" id="mobile">
+				<label for="bloodgroup" style="font-size:30px;">Blood Group <span class="fa fa-tint"></span> </label>
+				<select class="form-control" style="border-radius:9px;"id="bloodgroup">
+					<option>Select Blood Group</option>
+					<option value="A+">A+</option>
+					<option value="B+">B+</option>
+					<option value="A-">A-</option>
+					<option value="B-">B-</option>
+					<option value="AB+">AB+</option>
+					<option value="AB-">AB-</option>
+				</select>
+				<label for="password" style="font-size:30px;">Password <span class="fa fa-key"></span> </label>
+				<input type="text" class="form-control" name="password" placeholder="Password.." style="border-radius:9px;" id="password">
+				<label for="cpassword" style="font-size:30px;">Confirm Password <span class="fa fa-key"></span> </label>
+				<input type="text" class="form-control" name="username" placeholder="Confirm Password.." style="border-radius:9px;" id="cpassword">
+				<br>
+				<input type="submit" value="Register" style="color:#000;width:20%;" class="btn btn-success">
+				<br><br>
+				 <a href="index.html">Already a Member ? Login Here ...</a>
+			</form>
+		</div>
+	<!--Registration Form Ends-->
+<!--Login Form-->
+		<div class="loginform" id="loginform">
+			<form>
+				<label for="email" style="font-size:30px;">Email : </label>
+				<input type="text" class="form-control" name="email" placeholder="Enter Your Email.." style="border-radius:9px;" id="loginemail">
+				<label for="password" style="font-size:30px;">Password : </label>
+				<input type="password" class="form-control" name="password" placeholder="Enter Your Email.." style="border-radius:9px;" id="loginpassword">
+				<br>
+				<input type="submit" value="Login" onclick="redirect()" style="color:#000;width:20%;" class="btn btn-success">
+				<br><br>
+				<a href="index.html" >Not a Member ? Register Here ... </a>
+			</form>
+			<script type="text/javascript" src="assests/js/usersdata.script.js"></script>
+			<script type="text/javascript">
+			</script>
+		</div>
+	<!--Login Form Ends-->
 <!-- Main Script File -->	
 <script type="text/javascript" src="assests/js/jquery.min.js"></script>
 <script type="text/javascript" src="assests/js/scroll.script.js"></script>
@@ -182,6 +170,7 @@
 <!--Index Script Files-->
 <script type="text/javascript" src="assests/js/state.json.data.js"></script>
 <script type="text/javascript" src="assests/js/state.city.json.data.js"></script>
+<script type="text/javascript" src="assests/js/home.script.js"></script>
 <script type="text/javascript" src="assests/js/index.script.js"></script>
 <!--Index Script File Ends-->
 </body>
