@@ -66,9 +66,68 @@
 							<select class="form-control" id="CITY">
 							</select>
 						</div><br>
-						<input type="submit" name="register" value="Find !!" id="find" class="btn btn-success regis">
+						<input type="submit" name="find" onclick="founddata();" value="Find !!" id="find" class="btn btn-success regis">
 					</div>
 				</div>
+				<div class="notifyCon" id="foundData">
+					<div class="newConNotify">
+				<center><h1>Users Near You : </h1></center><br>
+				</div>
+				<div class="right">
+					<button onclick="closedata()" style="position:fixed;right:0;" class="btn btn-danger">Close</button>
+				</div>
+				<div class="clear"></div>
+				<br>
+				<h1>Near You : </h1>
+				<ul class="notifyList">
+				<li>
+					<label>Name : </label>	Sanheen Sethi<br>
+					<label>Blood Group : </label> AB+<br>
+					<label>Contact Details : </label> <a href="tel:+918360638685" >Click Here to Call : +91-8360638685</a><br>
+					<label>Location : </label> Panchkula
+				</li><br><br>
+				<li>
+					<label>Name : </label>	Mandeep Dhyani<br>
+					<label>Blood Group : </label> A+<br>
+					<label>Contact Details : </label> <a href="tel:+918360638685" >Click Here to Call : +91-8360638685</a><br>
+					<label>Location : </label> Derabasi
+				</li><br><br>
+				<li>
+					<label>Name : </label>	Himanshu Sharma<br>
+					<label>Blood Group : </label> B+<br>
+					<label>Contact Details : </label> <a href="tel:+918360638685" >Click Here to Call : +91-8360638685</a><br>
+					<label>Location : </label> Chandigarh
+				</li><br><br>
+				<li>
+					<label>Name : </label>	Himanshu Sharma<br>
+					<label>Blood Group : </label> B+<br>
+					<label>Contact Details : </label> <a href="tel:+918360638685" >Click Here to Call : +91-8360638685</a><br>
+					<label>Location : </label> Chandigarh
+				</li><br><br>
+				<li>
+					<label>Name : </label>	Himanshu Sharma<br>
+					<label>Blood Group : </label> B+<br>
+					<label>Contact Details : </label> <a href="tel:+918360638685" >Click Here to Call : +91-8360638685</a><br>
+					<label>Location : </label> Chandigarh
+				</li><br><br>
+				<li>
+					<label>Name : </label>	Himanshu Sharma<br>
+					<label>Blood Group : </label> B+<br>
+					<label>Contact Details : </label> <a href="tel:+918360638685" >Click Here to Call : +91-8360638685</a><br>
+					<label>Location : </label> Chandigarh
+				</li>
+				</ul>
+				</div>
+				<script type="text/javascript">
+					function founddata(){
+						data = document.getElementById('foundData');
+						data.style.display="block";
+					}
+					function closedata(){
+						data = document.getElementById('foundData');
+						data.style.display="none";
+					}
+				</script>
 				<div class="col col-12 col-md-12">
 					<div class="explorecont left">
 						<h3><span class="fa fa-group"></span> Register Here ! Help Others <span class="fa fa-group"></span></h3>
@@ -82,6 +141,27 @@
 			</div>
 		</div>
 	</div>
+	<!--BlockQuotes-->
+	<div class="row">
+		<div class="col col-12 col-md-12">
+			<div class="slogans">
+				<blockquote>
+					<p id="quote"></p>
+				</blockquote>
+			</div>
+		</div>
+	</div>
+	<!--BlockQuotes Ends-->
+	<br><br>
+	<!--Our Users All Over India-->
+	<div class="row">
+		<div class="col col-12 col-md-12">
+			<center><h1 class="usersh1"><span class="fa fa-group"></span> Our Users All Over India : </h1></center>
+			<div class="circle" users="300">300k</div>
+		</div>
+	</div>
+	<!--Users Ends-->
+	<br><br>
 	</section>
 	<!--CONTENT ENDS-->
 	<!-- FOOTER -->
@@ -160,6 +240,7 @@
 			<script type="text/javascript">
 			</script>
 		</div>
+</div>
 	<!--Login Form Ends-->
 <!-- Main Script File -->	
 <script type="text/javascript" src="assests/js/jquery.min.js"></script>
