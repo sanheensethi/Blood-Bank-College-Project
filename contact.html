@@ -24,6 +24,7 @@
 <!--Index Page Files-->
 <link rel="stylesheet" href="assests/css/index.style.css">
 <link rel="stylesheet" href="assests/css/about.css">
+<link rel="stylesheet" href="assests/css/contact.css">
 <!--Index Page Files Ends-->
 </head>
 <body>
@@ -76,8 +77,8 @@
 				<ul class="navcon" id="navul">
 					<li><a href="home.html">Home</a></li>
 					<li><a href="home.html">Explore</a></li>
-					<li><a href="contact.html" >Contact US</a></li>
-					<li><a href="#aboutus" >About US</a></li>
+					<li><a href="#contactus" >Contact US</a></li>
+					<li><a href="aboutus.html" >About US</a></li>
 					<li><a href="index.html" >Logout</a></li>
 				</ul>
 			</nav>
@@ -101,26 +102,22 @@
 	</section>
 	<!-- HEADER ENDS -->
 	<!--CONTENT-->
-		<section id="aboutus">
+		<section id="contactus">
 			<div class="about-me-container">
 				<div class="pic">
 					<img src="assests/images/team.jpg" class="img"/>
 				</div>
 			</div><br><br><br>
-			<div class="aboutData">
-				<i class="fa fa-user"></i> &nbsp;&nbsp;Sanheen Sethi	<br>
-				<i class="fa fa-tint"></i> &nbsp;&nbsp;Blood Group : AB+	<br>
-			<br>
-			<i class="fa fa-tint"></i><i class="fa fa-tint"></i> &nbsp; Hello Guys ! My name is Sanheen Sethi. This is my Dream Project Blood Bank. This Organisation is all over in India , which helps people to not to go to difficulty for needed of the blood. I am a CS Student of Post Graduate Govt. College Sector - 11 Chandigarh , Punjab University. I created many projects but this is my favourite project which help other peoples. &nbsp; <i class="fa fa-tint"></i><i class="fa fa-tint"></i>
-			<br>
-			<i class="fa fa-envelope"></i> :<br>sanheensethi37659@gmail.com<br>
-			<i class="fa fa-phone"></i> :<br> +91-8360638685
-			<br><hr><br>
-			<a href=""><span class="fa fa-facebook"></span></a>&nbsp;&nbsp;
-			<a href=""><span class="fa fa-twitter"></span></a>&nbsp;&nbsp;
-			<a href=""><span class="fa fa-linkedin"></span></a>&nbsp;&nbsp;
-			<a href=""><span class="fa fa-github"></span></a>
-			
+			<div class="contact-form">
+				<form>
+					<label>Name : </label>
+					<input type="text" name="name" id="name" placeholder="Name..." class="form-control">
+					<label>Email : </label>
+					<input type="text" name="email" id="email" placeholder="Email..." class="form-control">
+					<label>Message : </label>
+					<textarea rows="10" style="border-radius:9px;" name="message" id="message" placeholder="Message..." class="form-control"></textarea><br>
+					<input type="submit" class="btn btn-success" id="feedback" value="Feedback">
+				</form>
 			</div>
 		</section>
 	<!--CONTENT ENDS--><br><br>

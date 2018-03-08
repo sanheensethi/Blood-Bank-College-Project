@@ -1,0 +1,34 @@
+div.about-me-container{
+	width:100%;
+	height:auto;
+}
+.pic{
+	border:1px solid transparent;
+	margin:0 auto;
+	width:350px;
+	height:350px;
+	z-index:1;
+	border-radius:50%;
+	transition:.5s;
+	overflow:hidden;
+	box-shadow:2px 3px 20px #000;
+}
+.pic:hover img{
+	transform:scale(1.1);
+	filter:grayscale(0);
+}
+.img{
+	width:350px;
+	height:350px;
+	border-radius:50%;
+	filter:grayscale(100);
+	transition:.5s;
+}
+.aboutData{
+	margin:0 auto;
+	width:90%;
+	padding:20px;
+	font-size:30px;
+	height:auto;
+	font-family:cursive,Arial;
+}

@@ -18,6 +18,14 @@
 	left:30px;
 	z-index:1000001;
 	transition:.5s;
+	animation: pulse 1s infinite linear;
+}
+@keyframes pulse{
+	0%{box-shadow:0 0 0 0px rgba(0,0,0,0); transform:scale(1.2);}
+	30%{box-shadow:0 0 0 10px rgba(0,0,0,.2);transfom:scale(1);}
+	60%{box-shadow:0 0 0 20px rgba(0,0,0,.5);transform:scale(1.1)}
+	90%{box-shadow:0 0 0 30px rgba(0,0,0,.2);transform:scale(1.1)}
+	100%{box-shadow:0 0 0 40px rgba(0,0,0,0);transform:scale(1.2)}
 }
 .notifyCon{
 	position:fixed;
