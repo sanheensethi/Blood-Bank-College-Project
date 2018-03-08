@@ -1,19 +1,11 @@
 {
-  "name": "blood-bank-college-project",
+  "name": "bloodbank",
   "version": "1.0.0",
-  "description": "This is Static HTML website of Blood Bank",
+  "description": "This is Static Html Website of Blood Bank",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sanheensethi/Blood-Bank-College-Project.git"
-  },
   "author": "Sanheen Sethi",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sanheensethi/Blood-Bank-College-Project/issues"
-  },
-  "homepage": "https://github.com/sanheensethi/Blood-Bank-College-Project#readme"
+  "license": "MIT"
 }
