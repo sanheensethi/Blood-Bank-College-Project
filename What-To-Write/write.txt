@@ -1,0 +1,63 @@
+Blood Bank
+
+Website : https://sanheensethi.github.io/Blood-Bank-College-Project/
+
+Code : https://github.com/sanheensethi/Blood-Bank-College-Project
+
+This is the Blood Bank Project in which anyone can search for blood as per their nearby city and blood group.
+The Site also have Registration and Login System.
+After Login it have Page for putting Requesting for blooad , and also have Notification button to see .. which people needs blood in which city.
+
+This website is Responsive using 
+
+@media only screen(max-width:___px){
+}
+
+In this website, I also use external Libraries like animate.css , font-awesome.css , glyphicon.css.
+
+In this it have , Little bit of JavaScript as Notification Open Close , Finding Blood on Main Page Open Close , Login , Registration Page open on same page.
+
+Having Option for States and When we select one state , corresponding Cities will be opened using document.createElement("option") and in which id STATE we want to append all of them as document.appendChild(option);
+
+The Cities And States encoded in Json format but put in .js File
+
+It Have Loader as when the page is loading. it shows Loader
+
+Responsive Menu : Home , Explore , Contact Us , About Us
+
+It have a Blockquote which is dynamically changing after 2500ms
+
+Structure of Folders : 
+
+> assests 
+  > css
+    > main.css
+    > about.css
+    > animate.css
+    > contact.css
+    > font-awesome.css
+    > glyphicon.css
+    > header.footer.style.css
+    > home.style.css
+    > index.style.css
+    > loader.css 
+    > main.css ( My Library )
+    > notify.css
+  > fonts
+  > images
+  > js
+    > header.footer.js
+    > home.script.js
+    > index.script.js
+    > jquery.min.js ( Used For Smooth Scrolling )
+    > loader.script.js
+    > scroll.script.js
+    > state.city.json.data.js
+    > state.json.data.js
+    > userdata.script.js ( Registered Users )
+> icon 
+   > icon.png
+> index.html
+> home.html
+> contact.html
+> about.html
